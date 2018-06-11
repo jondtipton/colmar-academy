@@ -1,0 +1,370 @@
+/* Color Palette http://paletton.com/#uid=13E0u0k9fuP5p+e89Pzc-jWbj5h */
+
+html {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+h1 {
+  color: rgba(19, 22, 28,1);
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+h2 {
+  color: rgba(19, 22, 28,1);
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+h4 {
+  color: rgba(19, 22, 28,1);
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.0rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: 1.05rem;
+  }
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+  width: 100%;
+  height: 4rem;
+  padding-right: 1.5rem;
+  padding-left: 0.5rem;
+}
+.header a {
+  padding-right: 1rem;
+  font-size: 1.2rem;
+}
+.colmar_logo {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.academy_logo {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgba(119, 137, 162, 1);
+}
+.logo {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logo img {
+  height: 3rem;
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+  .mobile_logos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header a {
+    display: none;
+  }
+  /*CANNOT FIGURE OUT WHY FIRST CHILD IS NOT WORKING? */
+  .banner:first-child {
+      background-color: rgba(119, 137, 162,1);
+  }
+}
+@media only screen and (min-width: 600px) {
+  .mobile_logos {
+    display: none;
+  }
+  .banner:nth-child(2n+0) {
+      background-color: rgba(119, 137, 162,1);
+  }
+}
+.banner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 3rem; /* CANNOT FIGURE OUT WHY MY HEADER OVERLAPS MY FIRST BANNER / TRIED DOING POSITION: RELATIVE BUT DIDN'T SEEM TO DO ANYTHING */
+  padding-bottom: 2rem;
+}
+.banner p {
+  padding-top: 1.5rem;
+  line-height: 1.75rem;
+  font-size: 1.25rem;
+}
+.banner h1 {
+  padding-top: 2rem;
+}
+.banner h4 {
+  padding-top: 2rem;
+}
+.banner span {
+  font-weight: bold;
+  padding-top: 2rem;
+}
+@media only screen and (max-width: 600px) {
+  .banner {
+    flex-direction: column;
+    padding-top: 2rem;
+    }
+  .banner h4 {
+      padding-top: 1rem;
+    }
+}
+.box_left {
+  padding-left:1.5rem;
+  max-width: 60%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.box_left img {
+  max-width:100%;
+  max-height:auto;
+  padding-top: 2rem;
+}
+@media only screen and (max-width: 600px) {
+  .box_left {
+    padding-left: 0rem;
+    max-width: 100%;
+    }
+}
+.box_right {
+  padding-left: 1.5rem;
+  max-width: 40%;
+}
+.box_right h1 {
+  padding-top: 8rem;
+  padding-right: 5rem;
+  padding-bottom: 2rem;
+}
+.box_right h2 {
+  padding-right: 5rem;
+  padding-bottom: 2rem;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  background-color: rgba(19, 22, 28,.75);
+  height: 3rem;
+}
+.button a {
+    color: white;
+    font-size: 1.5rem;
+}
+@media only screen and (max-width: 600px) {
+  .box_right {
+    padding: 1rem;
+    max-width: 100%;
+  }
+  .box_right h1 {
+    padding-top: 2rem;
+    padding-right: 0rem;
+    padding-bottom: 2rem;
+  }
+  .box_right h2 {
+    padding-right: 0rem;
+    padding-bottom: 2rem;
+  }
+
+  .button {
+    width: 100%;
+    background-color: rgba(19, 22, 28,.75);
+    height: 3rem;
+  }
+  #mobile {
+    display: none;
+  }
+}
+.box_center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  text-align: left;
+}
+.snippet_horizontal {
+  max-width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top:2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+.snippet_horizontal:nth-child(3n+3) {
+  background-color: rgba(214, 230, 253,1);
+}
+.image_box_horizontal {
+  width: 35%;
+  height: auto;
+}
+.image_box_horizontal img {
+  width: 100%;
+  height: auto;
+}
+.information {
+  width: 65%;
+  height: 10rem;
+  line-height: 1.75rem;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.information p {
+  font-size: 1.25rem;
+}
+.information a {
+  font-size: 1.25rem;
+  color: rgba(67, 83, 104,1);
+  font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+  .snippet_horizontal {
+    flex-direction: column;
+    padding: 0rem;
+  }
+    .snippet_horizontal:nth-child(3n+3) {
+      background-color: white;
+    }
+
+    .image_box_horizontal {
+      width: 100%;
+    }
+
+    /* CANNOT FIGURE OUT WHY MY IMAGES LOOK SO CRAPPY? */
+
+    .image_box_horizontal img {
+      max-width: 100%;
+      max-height: auto;
+    }
+    .information {
+      width: 100%;
+      height: 10rem;
+      line-height: 1.25rem;
+      padding-left: 0rem;
+    }
+
+    .information p {
+      font-size: 1.25rem;
+    }
+
+    .information a {
+      font-size: 1.25rem;
+      color: rgba(67, 83, 104,1);
+      font-weight: bold;
+    }
+}
+.start_learning {
+  text-align: center;
+}
+.start_learning h1 {
+  padding-bottom: 3rem;
+}
+.snippet_vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 20rem;
+  height: 22rem;
+  background-color: white;
+  margin: 1rem;
+}
+.image_box_vertical img {
+  max-width: 100%;
+  height: auto;
+}
+.courses h2 {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.courses h3 {
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+.courses p {
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+.thesis_exhibit {
+  text-align: center;
+  width: 100%;
+}
+.thesis_container {
+  display: flex;
+  text-align: left;
+}
+@media only screen and (max-width: 600px) {
+  .box_center {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    text-align: center;
+  }
+  .snippet_vertical {
+    align-items: left;
+    width: 100%;
+    height: 3.5rem;
+    background-color: rgba(172, 194, 224,1);
+    margin: 0.5rem;
+  }
+  .start_learning h1 {
+    padding-bottom: 1rem;
+  }
+}
+.image_box_left {
+  width: 100%;
+}
+.image_box_left video {
+  padding-top: 2rem;
+  max-width:100%;
+  max-height:auto;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(214, 230, 253,1);
+  max-width: 100%;
+  height: 4rem;
+  padding-right: 1.5rem;
+  padding-left: 0.5rem;
+}
+footer p {
+  flex-grow: 1;
+}
+footer a {
+  padding-left: 1.5rem;
+}
+@media only screen and (max-width: 600px) {
+  footer p {
+    font-size: 0.75rem;
+  }
+}
